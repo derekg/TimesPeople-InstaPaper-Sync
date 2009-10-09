@@ -1,0 +1,242 @@
+
+/* ----- BEGIN RESET STYLES */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+body {
+    line-height: 1;
+    color: black;
+    background: white;
+}
+ol, ul {
+    list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: "";
+}
+blockquote, q {
+    quotes: "" "";
+}
+
+/* ------ BEGIN APP STYLES */
+
+
+.shell {
+    position: relative;
+    margin: 0 auto;
+    border: 1px solid #999;
+    padding: 0 0 45px;
+    width: 972px;
+}
+
+h1 {
+    padding-top: 24px;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 2.9em;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 a,
+h1 a:hover {
+    text-decoration: none;
+}
+
+h2 {
+    margin: 0.5em 0;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 2.6em;
+    text-align: center;
+}
+
+h3 {
+    margin: 1em 0;
+    font-size: 1.8em;
+    font-family: georgia, "times new roman", times, serif;
+}
+
+a,
+a:visited {
+    color: #004276;
+    text-decoration: underline;
+}
+
+a:visited,
+a:hover {
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h1 a:visited,
+h2 a:visited,
+h3 a:visited {
+    color: #000;
+}
+BODY { 
+        color: #142A3B;
+        background: #aaa;
+        font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-align: center;
+	align: center;
+
+}
+a:link {
+  color: #111;
+  text-decoration: underline;
+}
+
+a:visited {
+  text-decoration: underline;
+  color: #111;
+}
+
+input {
+        font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Geneva, Lucida, Arial, Helvetica, sans-serif;
+        border-top: 1px solid #666;
+        border-right: 1px solid #999;
+        border-bottom: 1px solid #999;
+        border-left: 1px solid #666;
+        padding: 4px;
+        margin: 4px;
+        background-color: #eef;
+	font-size: 16pt;
+}
+
+div {
+        -moz-border-radius: 10px;
+        background-color: #fafafa;
+        border: 2px solid #EEEAE4;
+        margin: 0px 0px 8px 2%%;
+        padding: 0px;
+        float: left;
+}
+
+h3 { 
+	font-size: 17px;
+}
+li { 
+	font-size: 14px;
+}
+#container { 
+	width: 940px;
+}
+
+.hr {
+    overflow: hidden;
+    margin: 0.5em 0 1em;
+    border-top: 2px solid #000;
+    height: 0;
+}
+
+.trendControls {
+    margin: 12px 0;
+    padding: 16px 0;
+    text-align: center;
+    background: #f0f0f0;
+}
+
+.trendControls .vs {
+    margin: 0 4px;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: arial, helvetica, sans-serif;
+}
+
+.trendControls input,
+.trendControls select {
+    margin: 0 4px;
+}
+
+.mainColumns {
+    margin: 1.5em 10px 0;
+    background: url(vertical_rule.gif) repeat-y 65% 0;
+}
+
+.mainColumns:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+*:first-child+html .mainColumns {
+    zoom: 1;
+    display: block;
+}
+
+.chartColumn {
+    float: left;
+    width: 63%;
+}
+
+.resultsColumn {
+    float: right;
+    width: 33%;
+}
+
+.query1 {
+    color: #207000;
+}
+
+.query2 {
+    color: #0077a0;
+}
+
+.data {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.data th,
+.data td {
+    border: 0 solid #ccc;
+    border-width: 1px 0;
+    padding: 4px;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 1.6em;
+}
+
+.data th {
+    width: 60%;
+}
+
+ol {
+    margin-left: 30px;
+    list-style: decimal;
+    font-size: 1.1em;
+    font-family: arial, helvetica, sans-serif;
+}

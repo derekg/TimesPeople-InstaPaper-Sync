@@ -1,0 +1,10 @@
+application: tp-ip-sync
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /
+  script: sync.py
+- url: /assets
+  static_dir: assets

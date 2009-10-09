@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+ "http://www.w3.org/TR/html4/strict.dtd"> 
+<html> 
+<head> 
+   <title>TimesPeople to InstaPaper Sync</title> 
+   <link rel="stylesheet" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css" type="text/css"> 
+    <link rel="stylesheet" type="text/css" href="assets/app.css">
+</head> 
+<body> 
+<div id="doc" class="yui-t7"> 
+   <div id="hd" role="banner"><h1>TimesPeople to InstaPaper Sync Tool</h1></div> 
+   <div id="bd" role="main"> 
+    <div class="yui-g"> 
+	<div>
+		<form method="get" action="/">
+			E-mail: <input type="text" name="email" value="{{email|escape}}">
+			<input type="submit" value="Get N'Sync">
+		</form>
+	</div>
+	<div>
+		{% ifnotequal nresults 0  %}
+			<h3> Sync : {{ nresults }}  items for {{ email }} </h3>
+			<ol>
+			{% for item in results %}
+			<li><h3><a href="{{ item.url|escape }}">{{ item.title }}</a></h3>{{ item.selection }}</li>
+			{% endfor %}
+			</ol>
+		{% endifnotequal %}
+		{% ifnotequal error "" %}
+			{{ error }}
+		{% endifnotequal %}
+	</div>
+    </div> 
+    </div> 
+   <div id="ft" role="contentinfo"><p>A Bass Ad Production &copy; 2009</p></div> 
+</div> 
+</body> 
